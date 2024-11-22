@@ -49,7 +49,21 @@ ul.nav {
     z-index: 1;
 }
 
-@media (max-width: 576px) {
-    
-
+.our-team-section {
+    background-color: #023A2F;
 }
+
+.bio-img-wrapper img{
+    border: solid 4px white;
+    border-radius: 140px;
+    
+}
+
+.vertical-line {
+    width: 1px; /* Line thickness */
+    height: 90%; /* Line height */
+    background-color: white;
+    border: none; /* Remove default border */
+    transform: rotate(180deg);
+  }
+
