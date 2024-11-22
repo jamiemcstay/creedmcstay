@@ -21,9 +21,26 @@ ul.nav {
     background-image: url('/images/hero-image.png');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
 }
 
-h1 {
-    color: #023A2F;
-
+.hero-row {
+    height: 100%;
 }
+
+.hero-right {
+    z-index: 2;
+    color: white;
+}
+
+.hero-right-overlay {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: #023A2F;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
