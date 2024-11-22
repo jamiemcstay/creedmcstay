@@ -18,23 +18,28 @@ ul.nav {
 .hero-section {
     height: 60vh;
     position: relative;
-    background-image: url('/images/hero-image.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     width: 100%;
+    overflow: hidden;
+}
+
+.hero-img-lg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    object-position: top center; /* Focuses on the top of the image */  
+    position: absolute;
 }
 
 .hero-row {
     height: 100%;
 }
 
-.hero-right {
+.hero-left {
     z-index: 2;
     color: white;
 }
 
-.hero-right-overlay {
+.hero-left-overlay {
     position: absolute;
     width: 50%;
     height: 100%;
@@ -44,3 +49,7 @@ ul.nav {
     z-index: 1;
 }
 
+@media (max-width: 576px) {
+    
+
+}
