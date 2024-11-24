@@ -1,3 +1,23 @@
+
+/*Heading Colors*/
+
+.dark-green {
+    color: #023A2F;
+}
+
+.mid-green-dark {
+    color: #4E8C81;
+}
+
+mid-green-bright {
+    color: #397F73;
+}
+
+.light-green {
+    color: #DCF4E7;
+}
+
+
 ul.nav {
     display: flex;
     /* Ensure items are in a row */
@@ -77,6 +97,17 @@ footer {
 
 .footer-img-wrapper {
     margin-right: 8px;
+}
+
+.our-team-section,
+.our-services-section {
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+
+.big-p {
+    font-size: 1.25rem;
+    font-weight: 400;
 }
 
   @media (min-width: 768px) {
