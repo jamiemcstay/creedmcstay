@@ -17,9 +17,10 @@ mid-green-bright {
     color: #DCF4E7;
 }
 
-/* h2 {
-    font-weight: 700;
-} */
+h2 {
+    font-size: 2rem;
+}
+
 
 p{
     font-family: 'Inria Serif';
@@ -77,7 +78,7 @@ ul.nav {
 }
 
 .service-icon-wrapper > i {
-    font-size: 52px;
+    font-size: 42px;
 }
 
 .service-section-text {
@@ -131,8 +132,11 @@ footer {
     padding-bottom: 36px;
 }
 
+.our-services-section h3 {
+    font-size: 1.5rem;
+}
 .big-p {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 400;
     font-family: 'Inria Serif';
 }
