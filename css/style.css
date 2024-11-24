@@ -17,6 +17,13 @@ mid-green-bright {
     color: #DCF4E7;
 }
 
+/* h2 {
+    font-weight: 700;
+} */
+
+p{
+    font-family: 'Inria Serif';
+}
 
 ul.nav {
     display: flex;
@@ -69,6 +76,25 @@ ul.nav {
     z-index: 1;
 }
 
+.service-icon-wrapper > i {
+    font-size: 52px;
+}
+
+.service-section-text {
+    padding-left: 12px;
+    padding-top: 6px;
+}
+
+.service-card-style {
+
+}
+
+.our-services-btn {
+    padding: 1rem 1.8rem;
+    letter-spacing: 0.1rem;
+    border-radius: 0;
+}
+
 .our-team-section {
     background-color: #023A2F;
 }
@@ -108,6 +134,7 @@ footer {
 .big-p {
     font-size: 1.25rem;
     font-weight: 400;
+    font-family: 'Inria Serif';
 }
 
   @media (min-width: 768px) {
