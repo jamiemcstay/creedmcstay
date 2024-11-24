@@ -86,8 +86,9 @@ ul.nav {
     padding-top: 6px;
 }
 
-.service-card-style {
-
+.services-heading-gradient {
+    background: rgb(250,250,250);
+    background: linear-gradient(90deg, rgba(250,250,250,1) 21%, rgba(220,244,231,1) 100%);
 }
 
 .our-services-btn {
@@ -136,9 +137,12 @@ footer {
     font-size: 1.5rem;
 }
 .big-p {
-    font-size: 1.5rem;
     font-weight: 400;
     font-family: 'Inria Serif';
+}
+
+.services-contact-card {
+    background-color: #d4d4d4;
 }
 
   @media (min-width: 768px) {
