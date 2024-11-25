@@ -153,6 +153,7 @@ footer {
 .big-p {
     font-weight: 400;
     font-family: 'Inria Serif';
+    font-size: 1.25rem; 
 }
 
 .contact-card-col {
