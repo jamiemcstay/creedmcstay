@@ -78,15 +78,26 @@ ul.nav {
 }
 
 .our-services-section {
+    padding-top: 60px;
+    padding-bottom: 60px; 
     background-image: url('/images/service-background.png');
     background-repeat: no-repeat;
-    background-size: cover;
-    
+    background-size: cover;   
 }
+
+.heading-col {
+    background-color: white;
+}
+
+/* .service-section-text {
+    background-image: url('/images/service-background-2.png');
+    background-repeat: no-repeat;
+    background-size: cover;   
+} */
 
 .our-services-section h2 {
     font-size: 2.5rem;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 
@@ -95,22 +106,32 @@ ul.nav {
 }
 
 .service-section-text {
-    padding-left: 12px;
+    /* padding-left: 12px; */
     padding-top: 6px;
+    box-shadow: 10px 10px 15px -3px #f1f2f1;
+    padding-right: 12px;
+    background-color: white;
 }
 
-.services-heading-gradient {
-    background-color: #ffffff;
-    opacity: 0.7;
-    background-image: radial-gradient(#4E8C81 0.6000000000000001px, #ffffff 0.6000000000000001px);
-    background-size: 12px 12px;
+.service-icon-wrapper {
+    padding: 12px;
 }
 
-.our-services-btn {
+.service-icon-wrapper,
+.service-section-text {
+    background-color: white;
+}
+
+
+.services-btn {
     padding: 1rem 1.8rem;
     letter-spacing: 0.1rem;
     border-radius: 0;
+    letter-spacing: 3px;
+    background-color: #4E8C81
 }
+
+
 
 .our-team-section {
     background-color: #023A2F;
@@ -150,25 +171,23 @@ footer {
 
 .our-services-section h3 {
     font-size: 1.5rem;
+    adding-top: 6px;
 }
 .big-p {
     font-weight: 400;
     font-family: 'Inria Serif';
     font-size: 1.25rem; 
+    padding-right: 20px;
 }
+
+
 
 .contact-card-col {
     padding-left: 42px;
 }
 
-.services-contact-card {
-    background-color: #d4d4d4;
-    width: 90%;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.service-row {
+    z-index:10;
 }
 
   @media (min-width: 768px) {
