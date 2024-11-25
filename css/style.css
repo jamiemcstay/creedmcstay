@@ -91,15 +91,13 @@ ul.nav {
     padding-left: 24px; 
 }
 
-/* .service-section-text {
-    background-image: url('/images/service-background-2.png');
-    background-repeat: no-repeat;
-    background-size: cover;   
-} */
 
 .our-services-section h2 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     font-weight: 600;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: solid #023A2F 2px;
 }
 
 
@@ -123,7 +121,7 @@ service-row-1 {
 }
 
 .service-card-style {
-    padding-top: 34px;
+    padding-top: 64px;
 }
 
 .services-btn {
