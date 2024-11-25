@@ -77,6 +77,18 @@ ul.nav {
     z-index: 1;
 }
 
+.our-services-section {
+    background-image: url('/images/service-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.our-services-section h2 {
+    font-size: 2.5rem;
+}
+
+
 .service-icon-wrapper > i {
     font-size: 42px;
 }
@@ -87,8 +99,10 @@ ul.nav {
 }
 
 .services-heading-gradient {
-    background: rgb(250,250,250);
-    background: linear-gradient(90deg, rgba(250,250,250,1) 21%, rgba(220,244,231,1) 100%);
+    background-color: #ffffff;
+    opacity: 0.7;
+    background-image: radial-gradient(#4E8C81 0.6000000000000001px, #ffffff 0.6000000000000001px);
+    background-size: 12px 12px;
 }
 
 .our-services-btn {
@@ -141,8 +155,18 @@ footer {
     font-family: 'Inria Serif';
 }
 
+.contact-card-col {
+    padding-left: 42px;
+}
+
 .services-contact-card {
     background-color: #d4d4d4;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
   @media (min-width: 768px) {
