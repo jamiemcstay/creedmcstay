@@ -98,7 +98,7 @@ ul.nav {
 } */
 
 .our-services-section h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 600;
 }
 
@@ -122,6 +122,9 @@ service-row-1 {
     margin-bottom: 30px;
 }
 
+.service-card-style {
+    padding-top: 34px;
+}
 
 .services-btn {
     padding: 1rem 1.8rem;
@@ -177,7 +180,7 @@ footer {
     font-weight: 400;
     font-family: 'Inria Serif';
     font-size: 1.25rem; 
-    padding-right: 20px;
+
 }
 
 
