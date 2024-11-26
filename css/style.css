@@ -39,7 +39,7 @@ ul.nav {
 }
 
 .nav-item .nav-link {
-    padding: 0 5% !important;
+    padding: 0 10px !important;
     font-weight: 500;
 }
 

@@ -16,33 +16,61 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-md bg-body-tertiary">
-            <div class="container-fluid d-flex align-items-center">
-                <!-- Left-aligned navigation links -->
-                <ul class="navbar-nav d-flex flex-row me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <!-- Toggler button for collapsing navbar (Visible only on small/medium screens) -->
+                <button class="navbar-toggler ms-auto d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
     
-                <!-- Centered logo -->
-                <a class="navbar-brand position-absolute start-50 translate-middle-x" href="#">
-                    <img src="https://via.placeholder.com/50" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
-                </a>
+                <!-- Collapsible navigation items (Visible on small/medium screens) -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto d-lg-none">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
     
-                <!-- Right-aligned contact info -->
-                <div class="contact-info d-flex flex-column ms-auto text-end">
-                    <span>Phone: <a href="tel:+123456789">+123456789</a></span>
-                    <span>Email: <a href="mailto:info@example.com">info@example.com</a></span>
+                <!-- Layout for larger screens (≥992px) -->
+                <div class="d-none d-lg-flex w-100 align-items-center">
+                    <!-- Left-aligned navigation items -->
+                    <ul class="navbar-nav d-flex flex-row me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+    
+                    <!-- Centered logo container -->
+                    <div class="d-flex justify-content-center flex-grow-1">
+                        <a class="navbar-brand" href="#">
+                            <img src="https://via.placeholder.com/50" alt="Logo" width="50" height="50">
+                        </a>
+                    </div>
+    
+                    <!-- Right-aligned contact info -->
+                    <div class="contact-info d-flex ms-auto text-end">
+                        <span><a href="tel:+123456789">+123456789</a></span>
+                        <span><a href="mailto:info@example.com">info@example.com</a></span>
+                    </div>
                 </div>
             </div>
         </nav>
