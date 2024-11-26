@@ -19,7 +19,7 @@ mid-green-bright {
 
 h2 {
     font-weight: 600;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 
@@ -146,6 +146,8 @@ ul.nav {
 
 /* Make sure service-section-text also behaves as expected */
 .service-section-text {
+    padding-top: 30px;
+    padding-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
