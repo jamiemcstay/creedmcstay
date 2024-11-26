@@ -19,6 +19,7 @@ mid-green-bright {
 
 h2 {
     font-weight: 600;
+    margin-bottom: 40px;
 }
 
 
@@ -78,6 +79,7 @@ ul.nav {
     z-index: 1; /* Ensure the logo stays on top of other elements */
 }
 
+
 .hero-section {
     background-color: #249987;
     padding-top: 80px 0;
@@ -127,25 +129,27 @@ ul.nav {
     padding-bottom: 60px; 
 }
 
-.heading-col {
-    background-color: white;
-    padding-right: 24px;
-    padding-left: 24px; 
+/* Ensure the image fills the wrapper and container */
+.service-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Full height of its parent col */
+    width: 100%; /* Full width of its parent col */
 }
 
-
-/* .our-services-section h2 {
-    margin-bottom: 24px;
-    padding-bottom: 24px;
-    border-bottom: solid #023A2F 2px;
-} */
-
-
-.service-icon-wrapper > i {
-    font-size: 42px;
+.service-icon-wrapper img {
+    width: 100%; /* Image should fill the width of the wrapper */
+    height: 100%; /* Image should fill the height of the wrapper */
+    object-fit: cover; /* Ensures the image fills the container without distortion */
 }
 
-
+/* Make sure service-section-text also behaves as expected */
+.service-section-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 service-row-1 {
     margin-bottom: 30px;
