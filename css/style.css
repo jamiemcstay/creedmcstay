@@ -139,9 +139,9 @@ ul.nav {
     justify-content: center;
     align-items: center;
     height: 100%;
-    flex-grow: 1;    /* Allow the image to grow */
-    flex-shrink: 1;  /* Allow the image to shrink */
-    flex-basis: 80%; /* Start with the image taking up 30% of the available space */
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 80%; 
     position: relative;
 }
 
