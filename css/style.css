@@ -55,12 +55,27 @@ ul.nav {
 }
 
 .nav-item .nav-link {
-    padding: 0 10px !important;
+    padding: 0 16px !important;
     font-weight: 500;
 }
 
 .contact-info div:first-of-type {
     margin-right: 18px;
+}
+
+.navbar {
+    position: relative; /* Allows absolute positioning within */
+    display: flex; /* Ensure other content respects navbar height */
+    align-items: center; /* Vertically center items like the left nav and right info */
+}
+
+.nav-logo-large-wrapper {
+    position: absolute; /* Takes the logo out of the document flow */
+    left: 50%; /* Center horizontally */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); 
+    z-index: 1; /* Ensure the logo stays on top of other elements */
 }
 
 .hero-section {
@@ -198,5 +213,12 @@ footer {
     
     .form-group {
         width: 49%;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        padding: 40px 0 !important;
+
     }
 }
