@@ -135,13 +135,6 @@ ul.nav {
 
 
 .service-icon-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 80%; 
     position: relative;
 }
 
@@ -225,7 +218,11 @@ footer {
   @media (min-width: 768px) {
 
     .service-icon-wrapper {
-        flex-basis: 30%;
+        flex-basis: 10%;
+    }
+
+    .service-section-text {
+        flex-basis: 90%;
     }
     
     .form-group {
@@ -239,6 +236,11 @@ footer {
     }
 
     .service-icon-wrapper {
-        flex-basis: 50%;
+        flex-basis: 10%;
     }
+
+    .service-section-text {
+        flex-basis: 75%;
+    }
+
 }
