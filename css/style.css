@@ -129,28 +129,35 @@ ul.nav {
     padding-bottom: 60px; 
 }
 
-/* Ensure the image fills the wrapper and container */
 .service-icon-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%; /* Full height of its parent col */
-    width: 100%; /* Full width of its parent col */
+    height: 100%;
+    flex-grow: 1;    /* Allow the image to grow */
+    flex-shrink: 1;  /* Allow the image to shrink */
+    flex-basis: 30%; /* Start with the image taking up 30% of the available space */
 }
 
+/* Make sure the image fills the service-icon-wrapper */
 .service-icon-wrapper img {
-    width: 100%; /* Image should fill the width of the wrapper */
-    height: 100%; /* Image should fill the height of the wrapper */
-    object-fit: cover; /* Ensures the image fills the container without distortion */
+    width: 100%; /* Fill the wrapper */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the image doesn't distort */
 }
 
-/* Make sure service-section-text also behaves as expected */
-.service-section-text {
-    padding-top: 30px;
-    padding-left: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+/* On small screens, shrink the image */
+@media (max-width: 576px) {
+    .service-icon-wrapper {
+        flex-basis: 20%; /* On small screens, image will take up 50% of the container */
+    }
+}
+
+/* On medium screens and above, increase image size */
+@media (min-width: 577px) {
+    .service-icon-wrapper {
+        flex-basis: 50%; /* Image takes up 25% of the container on medium and larger screens */
+    }
 }
 
 service-row-1 {
