@@ -225,13 +225,13 @@ footer {
         padding-bottom: 60px;
     }
 
-    .service-icon-wrapper {
+    /* .service-icon-wrapper {
         flex-basis: 10%;
-    }
+    } */
 
-    .service-section-text {
+    /* .service-section-text {
         flex-basis: 90%;
-    }
+    } */
 
     h2 {
         margin-bottom: 30px;
@@ -252,12 +252,5 @@ footer {
         margin-bottom: 30px;
     }
 
-    .service-icon-wrapper {
-        flex-basis: 10%;
-    }
-
-    .service-section-text {
-        flex-basis: 75%;
-    }
 
 }
