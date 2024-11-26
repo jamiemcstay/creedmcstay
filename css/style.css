@@ -18,7 +18,6 @@ mid-green-bright {
 }
 
 h2 {
-    font-size: 2.8rem;
     font-weight: 600;
 }
 
@@ -81,9 +80,6 @@ ul.nav {
 .our-services-section {
     padding-top: 60px;
     padding-bottom: 60px; 
-    background-image: url('/images/service-background.png');
-    background-repeat: no-repeat;
-    background-size: cover;   
 }
 
 .heading-col {
@@ -104,12 +100,11 @@ ul.nav {
     font-size: 42px;
 }
 
-.service-section-text {
-    /* padding-left: 12px; */
+/* .service-section-text {
     padding-top: 6px;
     box-shadow: 10px 10px 15px -3px #f1f2f1;
     padding-right: 12px;
-}
+} */
 
 .service-icon-wrapper {
     padding: 12px;
