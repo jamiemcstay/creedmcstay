@@ -43,6 +43,10 @@ ul.nav {
     font-weight: 500;
 }
 
+.contact-info div:first-of-type {
+    margin-right: 18px;
+}
+
 .hero-section {
     height: 60vh;
     position: relative;
