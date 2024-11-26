@@ -20,6 +20,7 @@ mid-green-bright {
 h2 {
     font-weight: 600;
     margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 
@@ -123,19 +124,28 @@ ul.nav {
     width: 100%;
 }
 
-
 .our-services-section {
-    padding-top: 60px;
-    padding-bottom: 60px; 
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+.service-wrapper {
+    margin-bottom: 15px;
 }
 
 .service-section-text {
     padding-left: 10px;
+    flex-basis: 85%
 }
 
 
 .service-icon-wrapper {
     position: relative;
+    flex-basis: 15%;
 }
 
 .service-icon-wrapper img {
@@ -144,12 +154,6 @@ ul.nav {
     object-fit: contain;
     position: absolute;
     top: 8px;
-}
-
-
-
-service-row-1 {
-    margin-bottom: 30px;
 }
 
 
@@ -183,8 +187,7 @@ footer {
     margin-right: 8px;
 }
 
-.our-team-section,
-.our-services-section {
+.our-team-section {
     padding-top: 80px;
     padding-bottom: 80px;
 }
@@ -209,13 +212,18 @@ footer {
 
 @media (max-width: 767.9px) {
 
-    .service-icon-wrapper {
+    /* .service-icon-wrapper {
         flex-basis: 80%;
-    }
+    } */
     
 }
 
   @media (min-width: 768px) {
+
+    .our-services-section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 
     .service-icon-wrapper {
         flex-basis: 10%;
@@ -224,6 +232,10 @@ footer {
     .service-section-text {
         flex-basis: 90%;
     }
+
+    h2 {
+        margin-bottom: 30px;
+    }
     
     .form-group {
         width: 49%;
@@ -231,8 +243,13 @@ footer {
 }
 
 @media (min-width: 992px) {
+
     .navbar {
         padding: 60px 0 !important;
+    }
+
+    .service-wrapper {
+        margin-bottom: 30px;
     }
 
     .service-icon-wrapper {
