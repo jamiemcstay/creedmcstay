@@ -2,7 +2,7 @@
 /*Heading Colors*/
 
 .dark-green {
-    color: #023A2F;
+    color: #249988;
 }
 
 .mid-green-dark {
@@ -117,7 +117,6 @@ ul.nav {
     display: flex; 
     justify-content: center;
     align-items: center;
-    
 }
 
 .hero-img img {
@@ -138,7 +137,7 @@ h2 {
 }
 
 .service-section-text {
-    padding-left: 10px;
+    padding-left: 15px;
     flex-basis: 85%
 }
 
@@ -161,19 +160,22 @@ h2 {
     background-color: #023A2F;
 }
 
-.bio-img-wrapper img{
-    border: solid 4px white;
-    border-radius: 140px;
-    
+
+
+.bio-img-wrapper {
+    flex-basis: 40%;
+    width: 100%;
+    height: auto;
 }
 
-.vertical-line {
-    width: 1px; /* Line thickness */
-    height: 90%; /* Line height */
-    background-color: white;
-    border: none; /* Remove default border */
-    transform: rotate(180deg);
-  }
+.bio-img-wrapper img{
+    width: 100%;
+}
+
+.bio-top-text {
+    flex-basis: 60%;
+}
+
 
 .message-form-group {
     width: 100%;
@@ -193,31 +195,6 @@ footer {
 }
 
 
-.big-p {
-    font-weight: 400;
-    font-family: 'Inria Serif';
-    font-size: 1.25rem; 
-
-}
-
-
-
-.contact-card-col {
-    padding-left: 42px;
-}
-
-.service-row {
-    z-index:10;
-}
-
-@media (max-width: 767.9px) {
-
-    /* .service-icon-wrapper {
-        flex-basis: 80%;
-    } */
-    
-}
-
   @media (min-width: 768px) {
 
     .our-services-section {
@@ -225,13 +202,9 @@ footer {
         padding-bottom: 60px;
     }
 
-    /* .service-icon-wrapper {
-        flex-basis: 10%;
-    } */
-
-    /* .service-section-text {
-        flex-basis: 90%;
-    } */
+    .service-section-text {
+        padding-left: 30px;
+    }
 
     h2 {
         margin-bottom: 30px;
