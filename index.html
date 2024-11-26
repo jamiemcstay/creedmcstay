@@ -17,40 +17,32 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-md bg-body-tertiary">
-            <div class="container">
-                <!-- Left-aligned logo -->
-                <a class="navbar-brand" href="#">
-                    <img src="https://via.placeholder.com/30" alt="Logo" width="30" height="24"
-                        class="d-inline-block align-text-top">
-                    Bootstrap
+            <div class="container-fluid d-flex align-items-center">
+                <!-- Left-aligned navigation links -->
+                <ul class="navbar-nav d-flex flex-row me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+    
+                <!-- Centered logo -->
+                <a class="navbar-brand position-absolute start-50 translate-middle-x" href="#">
+                    <img src="https://via.placeholder.com/50" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
                 </a>
-
-                <!-- Toggler button for collapsing nav on small screens -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Collapsible navbar content -->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <!-- Centered navigation links -->
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Active</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-disabled="true">Disabled</a>
-                        </li>
-                    </ul>
-
-                    <!-- Right-aligned button that disappears on small screens -->
-                    <button class="btn btn-primary d-none d-md-block">Call us</button>
+    
+                <!-- Right-aligned contact info -->
+                <div class="contact-info d-flex flex-column ms-auto text-end">
+                    <span>Phone: <a href="tel:+123456789">+123456789</a></span>
+                    <span>Email: <a href="mailto:info@example.com">info@example.com</a></span>
                 </div>
             </div>
         </nav>
