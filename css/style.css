@@ -38,6 +38,22 @@ ul.nav {
     padding: 0;
 }
 
+.nav-logo-small-wrapper {
+    width: 2.2rem; 
+    height: auto;
+}
+
+.nav-logo-small-wrapper img,
+.nav-logo-large-wrapper img {
+    width: 100%;
+
+}
+
+.nav-logo-large-wrapper {
+    width: 4rem;
+    height: auto;
+}
+
 .nav-item .nav-link {
     padding: 0 10px !important;
     font-weight: 500;
