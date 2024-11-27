@@ -17,6 +17,12 @@ mid-green-bright {
     color: #DCF4E7;
 }
 
+header {
+    background-color: #063A38;
+    color: white; /* Ensures text is readable */
+}
+
+
 h2 {
     display: inline-block;
     margin-bottom: 45px;
@@ -76,6 +82,7 @@ ul.nav {
 .nav-item .nav-link {
     padding: 0 16px !important;
     font-weight: 500;
+    color: white;
 }
 
 .contact-info div:first-of-type {
