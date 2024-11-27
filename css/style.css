@@ -238,8 +238,37 @@ ul.nav {
     color: lightgray;
 }
 
-.message-form-group {
-    width: 100%;
+.contact-section {
+    background-color: #249987;
+}
+
+form {
+    color: white;
+}
+
+.form-control,
+.send-btn {
+    border-radius: 0;
+    border: solid 1px white;
+    background-color: #249987;
+    
+}
+
+.send-btn {
+    border: 0;
+    background: rgb(202, 255, 247);
+    background: linear-gradient(180deg, rgba(202, 255, 247, 1) 0%, rgba(255, 255, 240, 1) 100%);
+    color: black;
+}
+
+.form-control::placeholder {
+    color: white;
+    opacity: 1;
+
+}
+
+.form-input-wrapper {
+    margin-bottom: 30px;
 }
 
 footer {
@@ -247,7 +276,7 @@ footer {
 }
 
 .footer-img-wrapper {
-    margin-right: 8px;
+    margin-right: 8px !important;
 }
 
 @media (max-width: 767px) {

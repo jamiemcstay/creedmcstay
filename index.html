@@ -278,17 +278,24 @@
                     <!-- Left column with 4 input fields -->
                     <div class="col-lg-6 d-flex align-items-stretch">
                         <div class="w-100">
-                            <div class="mb-3">
-                                <input type="text" class="form-control" id="input1" placeholder="Enter first value">
+                            <!-- Name Field -->
+                            <div class="form-input-wrapper">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
                             </div>
-                            <div class="mb-3">
-                                <input type="text" class="form-control" id="input2" placeholder="Enter second value">
+                            
+                            <!-- Email Field -->
+                            <div class="form-input-wrapper">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Eamil" required>
                             </div>
-                            <div class="mb-3">
-                                <input type="text" class="form-control" id="input3" placeholder="Enter third value">
+        
+                            <!-- Phone Number Field -->
+                            <div class="form-input-wrapper">
+                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone" pattern="[\+][0-9]{1,4}[\-][0-9]{1,14}" required>
                             </div>
+        
+                            <!-- Organisation Field -->
                             <div>
-                                <input type="text" class="form-control" id="input4" placeholder="Enter fourth value">
+                                <input type="text" class="form-control" id="organisation" name="organisation" placeholder="Organisation">
                             </div>
                         </div>
                     </div>
@@ -296,17 +303,18 @@
                     <!-- Right column with message field and send button -->
                     <div class="col-lg-6 d-flex align-items-stretch">
                         <div class="w-100 d-flex flex-column">
-                            <div class="mb-3 flex-grow-1">
-                                <textarea class="form-control h-100" id="message" rows="4" placeholder="Enter your message"></textarea>
+                            <div class="flex-grow-1 form-input-wrapper">
+                                <!-- Message Field -->
+                                <textarea class="form-control h-100" id="message" name="message" rows="4" placeholder="Enter your message" required></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary">Send</button>
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn btn-primary send-btn">Send</button>
                         </div>
                     </div>
                 </div>
             </div>
-
-
         </section>
+        
     </main>
     <footer class="text-white text-lg-start">
         <!-- Grid container -->
