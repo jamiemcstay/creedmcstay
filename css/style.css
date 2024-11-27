@@ -36,6 +36,7 @@ h3 {
 
 p{
     font-family: 'Inria Serif';
+    font-size: calc(0.8rem + 0.3vw);
 }
 
 ul.nav {
@@ -291,11 +292,20 @@ form {
 }
 
 footer {
-    background-color: #023A2F;
+    padding-top: 60px;
+    background-color: #063A38;
 }
 
-.footer-img-wrapper {
-    margin-right: 8px !important;
+.footer-info-wrapper {
+    padding-bottom: 60px;
+}
+
+.footer-contact > p {
+    margin-bottom: 0;
+}
+
+.footer-logo-wrapper {
+    justify-content: flex-end;
 }
 
 @media (max-width: 767px) {
