@@ -273,64 +273,34 @@
             </div>
         </section>
         <section class="container-fluid contact-section">
-            <div class="container">
-                <h2 class="text-center mb-5">Ask us anything</h2>
-                <div class="row d-flex flex-column align-items-center justify-content-center">
-                    <div class="col">
-                        <form>
-                            <div class="form-row d-flex flex-column flex-md-row justify-content-between">
-                                <!-- Name Field -->
-                                <div class="form-group">
-                                    
-                                    <input type="text" class="form-control" id="name" name="name"
-                                        placeholder="Your Name" pattern="[A-Za-z\s]+"
-                                        title="Please enter a valid name (letters and spaces only)" required>
-                                </div>
-                                <!-- Email Field -->
-                                <div class="form-group">
-                                    
-                                    <input type="email" class="form-control" name="email" id="email"
-                                        placeholder="Your Email"
-                                        title="Please enter a valid email address (e.g., example@domain.com)" required>
-                                </div>
-
+            <div class="container mt-5">
+                <div class="row">
+                    <!-- Left column with 4 input fields -->
+                    <div class="col-lg-6 d-flex align-items-stretch">
+                        <div class="w-100">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="input1" placeholder="Enter first value">
                             </div>
-                            <div class="form-row d-flex flex-column flex-md-row justify-content-between">
-                                <!-- Name Field -->
-                                <!-- Phone Field -->
-                                <div class="form-group">
-                                    
-                                    <input type="tel" class="form-control" id="phone" name="phone"
-                                        placeholder="Your Phone" pattern="\d+"
-                                        title="Please enter a valid phone number (numbers only)" required>
-                                </div>
-                                <!-- Org Field -->
-                                <div class="form-group">
-                                    
-                                    <input type="text" class="form-control" name="organisation" id="organisation"
-                                        placeholder="Your Organisation">
-                                </div>
-
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="input2" placeholder="Enter second value">
                             </div>
-                            <div class="form-row d-flex justify-content-center mb-2">
-                                <!-- Message Field -->
-                                <div class="message-form-group">
-                                    
-                                    <textarea class="form-control" id="message" name="message" rows="4"
-                                        placeholder="Your Message" required></textarea>
-                                </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="input3" placeholder="Enter third value">
                             </div>
-
-                            <!-- Send Button -->
-                            <div class="form-row">
-                                <div class="col-md-4">
-                                    <button type="submit"
-                                        class="btn btn-primary btn-block ml-5 phone-number-text">Send</button>
-                                </div>
-                                <div class="col-md-4"></div>
-                                <div class="col-md-4"></div>
+                            <div>
+                                <input type="text" class="form-control" id="input4" placeholder="Enter fourth value">
                             </div>
-                        </form>
+                        </div>
+                    </div>
+        
+                    <!-- Right column with message field and send button -->
+                    <div class="col-lg-6 d-flex align-items-stretch">
+                        <div class="w-100 d-flex flex-column">
+                            <div class="mb-3 flex-grow-1">
+                                <textarea class="form-control h-100" id="message" rows="4" placeholder="Enter your message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send</button>
+                        </div>
                     </div>
                 </div>
             </div>
