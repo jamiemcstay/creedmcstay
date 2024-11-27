@@ -34,7 +34,13 @@ h3 {
 }
 
 
-p{
+ul, a {
+    text-decoration: none;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+p, li {
     font-family: 'Inria Serif';
     font-size: calc(0.8rem + 0.3vw);
 }
@@ -308,6 +314,33 @@ footer {
     justify-content: flex-end;
 }
 
+.footer-bottom-wrapper {
+    padding-top: 15px;
+
+}
+
+.footer-bottom-wrapper p {
+    font-size: calc(0.8rem + 0.2vw);
+}
+
+@media (max-width: 374px) {
+
+    .footer-ul-wrapper {
+        padding: 0;
+    }
+
+    .footer-ul-wrapper ul {
+        gap: 8px;
+    }
+}
+
+@media (min-width: 375px) {
+
+    .footer-ul-wrapper ul {
+        gap: 15px;
+    }
+}
+
 @media (max-width: 767px) {
 
     .footer-left {
@@ -336,6 +369,16 @@ footer {
         text-align: left; /* Align logo to the left */
     }
 
+    .footer-ul-wrapper  {
+        justify-content: center;
+    }
+
+    .copyright-text {
+        text-align: center;
+    }
+
+
+
 }
 
 @media (max-width: 991px) {
@@ -360,6 +403,14 @@ footer {
     .footer-address {
         margin-right: 30px;
     }
+
+    .footer-ul-wrapper {
+        justify-content: end;
+    }
+
+    .footer-ul-wrapper  ul {
+        gap: 12px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -371,6 +422,11 @@ footer {
     .service-wrapper {
         margin-bottom: 30px;
     }
+
+    .footer-ul-wrapper  ul {
+        gap: 15px;
+    }
+
 
 
 }
