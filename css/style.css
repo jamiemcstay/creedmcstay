@@ -129,7 +129,8 @@ ul.nav {
     width: 100%;
 }
 
-.our-services-section {
+.our-services-section,
+.our-team-section {
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -239,15 +240,28 @@ footer {
     margin-right: 8px;
 }
 
-.our-team-section {
-    padding-top: 80px;
-    padding-bottom: 80px;
+@media (max-width: 767px) {
+
+    .bio-top-wrapper {
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+    }
+
+    .bio-top-text {
+        padding-left: 0;
+    }
+    
+    .bio-img-wrapper {
+        margin-bottom: 15px;
+    }
+
 }
 
 
   @media (min-width: 768px) {
 
-    .our-services-section {
+    .our-services-section,
+    .our-team-section {
         padding-top: 60px;
         padding-bottom: 60px;
     }
