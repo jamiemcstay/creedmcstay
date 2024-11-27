@@ -160,12 +160,17 @@ h2 {
     background-color: #023A2F;
 }
 
-
+.bio-top-wrapper {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: solid 2px #1E8574;
+}
 
 .bio-img-wrapper {
     flex-basis: 40%;
     width: 100%;
     height: auto;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 50px), calc(100% - 50px) 100%, 0 100%);
 }
 
 .bio-img-wrapper img{
@@ -174,8 +179,28 @@ h2 {
 
 .bio-top-text {
     flex-basis: 60%;
+    padding-left: 30px;
 }
 
+.bio-text p {
+    font-size: calc(0.8rem + 0.3vw);
+}
+
+.bio-top-text h3 {
+    margin-bottom: 15px;
+}
+
+.bio-contact-info {
+    font-size: calc(1rem + 0.4vw);
+    font-weight: 300;
+}
+
+.bio-contact-icon > i {
+    display: inline-block;
+    margin-right: 5px;
+    font-size: calc(1rem + 0.4vw);
+    color: lightgray;
+}
 
 .message-form-group {
     width: 100%;
