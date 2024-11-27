@@ -297,7 +297,7 @@ footer {
 }
 
 .footer-info-wrapper {
-    padding-bottom: 60px;
+    padding-bottom: 30px;
 }
 
 .footer-contact > p {
@@ -310,7 +310,14 @@ footer {
 
 @media (max-width: 767px) {
 
+    .footer-left {
+        margin-bottom: 30px;
+        justify-content: space-between;
+    }
 
+    .footer-logo-wrapper {
+        text-align: left !important; /* Override Bootstrap's text-md-end and text-center */
+    }
 
     .bio-top-wrapper {
         margin-bottom: 15px;
@@ -323,6 +330,10 @@ footer {
     
     .bio-img-wrapper {
         margin-bottom: 15px;
+    }
+
+    .footer-logo-wrapper {
+        text-align: left; /* Align logo to the left */
     }
 
 }
@@ -344,6 +355,10 @@ footer {
     
     .form-group {
         width: 49%;
+    }
+
+    .footer-address {
+        margin-right: 30px;
     }
 }
 
