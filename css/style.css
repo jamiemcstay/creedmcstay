@@ -217,13 +217,13 @@ ul.nav {
 }
 
 .bio-contact-info {
-    font-size: calc(1rem + 0.4vw);
+    font-size: calc(1rem + 0.3vw);
     font-weight: 300;
 }
 
 .bio-contact-icon > i {
     display: inline-block;
-    margin-right: 5px;
+    margin-right: 15px;
     font-size: calc(1rem + 0.4vw);
     color: lightgray;
 }
