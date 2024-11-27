@@ -18,9 +18,13 @@ mid-green-bright {
 }
 
 h2 {
+    display: inline-block;
+    margin-bottom: 45px;
+    padding-bottom: 15px;
+    letter-spacing: 3px;
     font-weight: 600;
-    margin-bottom: 10px;
-    margin-bottom: 30px;
+    border-bottom: solid 2px #249988;
+    text-align: center;
 }
 
 
@@ -128,9 +132,6 @@ ul.nav {
     padding-bottom: 30px;
 }
 
-h2 {
-    margin-bottom: 15px;
-}
 
 .service-wrapper {
     margin-bottom: 15px;
@@ -231,9 +232,6 @@ footer {
         padding-left: 30px;
     }
 
-    h2 {
-        margin-bottom: 30px;
-    }
     
     .form-group {
         width: 49%;
