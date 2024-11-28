@@ -51,10 +51,13 @@ mid-green-bright {
 
 header {
     background-color: #063A38;
-    color: white; /* Ensures text is readable */
+    color: white;
+    /* Ensures text is readable */
 }
 
-h1,h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'NeueFaktum Medium';
 }
 
@@ -72,13 +75,16 @@ h2 {
 
 
 
-ul, a {
+ul,
+a {
     text-decoration: none;
     list-style-type: none;
     padding-left: 0;
 }
 
-p, li, .contact-info {
+p,
+li,
+.contact-info {
     font-family: 'NeueFaktum Light';
     font-size: calc(0.8rem + 0.3vw);
 }
@@ -93,7 +99,7 @@ ul.nav {
 }
 
 .nav-logo-small-wrapper {
-    width: 2.2rem; 
+    width: 2.2rem;
     height: auto;
 }
 
@@ -118,6 +124,38 @@ ul.nav {
     background-image: none;
 }
 
+.navbar-nav .nav-link {
+    color: white;
+    /* Default link color */
+    transition: color 0.3s ease;
+    /* Smooth transition for color change */
+}
+
+/* Change color when hovering over the link */
+.navbar-nav .nav-link:hover {
+    color: #249987;
+    /* Hover color */
+}
+
+/* Change color when the link is active (clicked) */
+.navbar-nav .nav-link:active {
+    color: #249987;
+    /* Active color */
+}
+
+/* Ensure the contact info links also have the same behavior */
+a  {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+a:hover,
+a:active,
+.bio-contact-icon i:hover {
+    transition: color 0.3s ease;
+    color: #249987;
+}
+
 .navbar-toggler-icon div {
     width: 100%;
     height: 3px;
@@ -127,12 +165,16 @@ ul.nav {
 
 .navbar-toggler:focus {
     outline: none !important;
-    box-shadow: none !important; /* Also remove any shadow if applied */
-    text-decoration: none !important; /* Optional if text-decoration applies */
+    box-shadow: none !important;
+    /* Also remove any shadow if applied */
+    text-decoration: none !important;
+    /* Optional if text-decoration applies */
 }
 
+
+
 .navbar-collapse {
-    padding-top: 12px; 
+    padding-top: 12px;
     padding-bottom: 12px;
 }
 
@@ -160,18 +202,26 @@ ul.nav {
 }
 
 .navbar {
-    position: relative; /* Allows absolute positioning within */
-    display: flex; /* Ensure other content respects navbar height */
-    align-items: center; /* Vertically center items like the left nav and right info */
+    position: relative;
+    /* Allows absolute positioning within */
+    display: flex;
+    /* Ensure other content respects navbar height */
+    align-items: center;
+    /* Vertically center items like the left nav and right info */
 }
 
 .nav-logo-large-wrapper {
-    position: absolute; /* Takes the logo out of the document flow */
-    left: 50%; /* Center horizontally */
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); 
-    z-index: 1; /* Ensure the logo stays on top of other elements */
+    position: absolute;
+    /* Takes the logo out of the document flow */
+    left: 50%;
+    /* Center horizontally */
+    top: 50%;
+    /* Center vertically */
+    left: 50%;
+    /* Center horizontally */
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    /* Ensure the logo stays on top of other elements */
 }
 
 
@@ -184,9 +234,11 @@ ul.nav {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: center;  /* Center content horizontally */
-    align-items: center;      /* Center content vertically */
-    
+    justify-content: center;
+    /* Center content horizontally */
+    align-items: center;
+    /* Center content vertically */
+
 }
 
 .hero-section::before {
@@ -196,7 +248,8 @@ ul.nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('/images/texture-hero.png'); /* Replace with your image path */
+    background-image: url('/images/texture-hero.png');
+    /* Replace with your image path */
     background-size: cover;
     background-position: center;
     z-index: 1;
@@ -208,7 +261,7 @@ ul.nav {
 
 .hero-img {
     position: relative;
-    display: flex; 
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -292,7 +345,7 @@ ul.nav {
     padding-right: 15px;
 }
 
-.bio-img-wrapper img{
+.bio-img-wrapper img {
     width: 100%;
 }
 
@@ -316,7 +369,7 @@ ul.nav {
     font-family: 'NeueFaktum Light';
 }
 
-.bio-contact-icon > i {
+.bio-contact-icon>i {
     display: inline-block;
     margin-right: 15px;
     font-size: calc(1rem + 0.4vw);
@@ -341,10 +394,11 @@ ul.nav {
     left: 0;
     width: 100%;
     height: 60px;
-    background-image: url('/images/pattern-light.png'); /* Replace with your image path */
+    background-image: url('/images/pattern-light.png');
+    /* Replace with your image path */
     background-size: cover;
     background-position: center;
-    z-index: 1; 
+    z-index: 1;
 }
 
 form {
@@ -356,7 +410,7 @@ form {
     border-radius: 0;
     border: 1px solid rgba(211, 211, 211, 0.5);
     background-color: #249987;
-    
+
 }
 
 .send-btn {
@@ -384,7 +438,7 @@ footer {
     padding-bottom: 60px;
 }
 
-.footer-contact > p {
+.footer-contact>p {
     margin-bottom: 0;
 }
 
@@ -427,7 +481,8 @@ footer {
     }
 
     .footer-logo-wrapper {
-        text-align: left !important; /* Override Bootstrap's text-md-end and text-center */
+        text-align: left !important;
+        /* Override Bootstrap's text-md-end and text-center */
     }
 
     .bio-top-wrapper {
@@ -438,16 +493,17 @@ footer {
     .bio-top-text {
         padding-left: 0;
     }
-    
+
     .bio-img-wrapper {
         margin-bottom: 15px;
     }
 
     .footer-logo-wrapper {
-        text-align: left; /* Align logo to the left */
+        text-align: left;
+        /* Align logo to the left */
     }
 
-    .footer-ul-wrapper  {
+    .footer-ul-wrapper {
         justify-content: center;
     }
 
@@ -467,13 +523,13 @@ footer {
 }
 
 
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
 
     .service-section-text {
         padding-left: 30px;
     }
 
-    
+
     .form-group {
         width: 49%;
     }
@@ -486,7 +542,7 @@ footer {
         justify-content: end;
     }
 
-    .footer-ul-wrapper  ul {
+    .footer-ul-wrapper ul {
         gap: 12px;
     }
 }
@@ -501,7 +557,7 @@ footer {
         margin-bottom: 30px;
     }
 
-    .footer-ul-wrapper  ul {
+    .footer-ul-wrapper ul {
         gap: 15px;
     }
 
