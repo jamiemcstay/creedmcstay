@@ -220,8 +220,8 @@ ul.nav {
 .our-services-section,
 .our-team-section,
 .contact-section {
-    padding-top: 30px;
-    padding-bottom: 90px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 
@@ -313,6 +313,7 @@ ul.nav {
 .bio-contact-info {
     font-size: calc(1rem + 0.3vw);
     font-weight: 300;
+    font-family: 'NeueFaktum Light';
 }
 
 .bio-contact-icon > i {
