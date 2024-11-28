@@ -74,6 +74,44 @@ ul.nav {
 
 }
 
+.navbar-toggler {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 40px;
+    height: 100%;
+    position: relative;
+    background-color: transparent;
+    background-image: none;
+}
+
+.navbar-toggler-icon div {
+    width: 100%;
+    height: 3px;
+    background-color: #249987;
+    margin: 9px 0;
+}
+
+.navbar-toggler:focus {
+    outline: none !important;
+    box-shadow: none !important; /* Also remove any shadow if applied */
+    text-decoration: none !important; /* Optional if text-decoration applies */
+}
+
+.navbar-collapse {
+    padding-top: 12px; 
+    padding-bottom: 12px;
+}
+
+.navbar-collapse li {
+    font-size: calc(0.8rem + 1.5vw);
+    color: 
+}
+
 .nav-logo-large-wrapper {
     width: 4rem;
     height: auto;
