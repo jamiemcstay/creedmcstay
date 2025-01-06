@@ -18,3 +18,7 @@ Thumbs.db
 .vscode/
 .idea/
 *.sublime-workspace
+
+/cache/
+/tmp/
+
