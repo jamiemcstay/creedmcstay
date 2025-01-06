@@ -557,6 +557,10 @@ footer {
         margin-bottom: 30px;
     }
 
+    .bio-top-text {
+        padding-left: 30px; 
+    }
+
     .footer-ul-wrapper ul {
         gap: 15px;
     }
