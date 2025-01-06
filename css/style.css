@@ -324,7 +324,7 @@ a:active,
 
 .bio-top-text {
     flex-basis: 60%;
-    padding-left: 60px;
+    padding-left: 50px;
 }
 
 .bio-text p {
@@ -344,7 +344,6 @@ a:active,
 
 .bio-contact-icon>i {
     display: inline-block;
-    margin-right: 15px;
     font-size: calc(1rem + 0.4vw);
     color: lightgray;
 }
@@ -510,6 +509,13 @@ footer {
     } 
 }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .bio-top-text {
+        padding-left: 5px;
+    }
+}
+
 
 @media (min-width: 768px) {
 
@@ -545,9 +551,6 @@ footer {
         margin-bottom: 30px;
     }
 
-    .bio-top-text {
-        padding-left: 30px; 
-    }
 
     .footer-ul-wrapper ul {
         gap: 15px;
