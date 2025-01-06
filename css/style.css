@@ -410,6 +410,7 @@ form {
     margin-bottom: 30px;
 }
 
+
 /*Footer*/
 
 footer {
@@ -504,6 +505,10 @@ footer {
     .bio-wrapper:first-of-type {
         margin-bottom: 60px;
     }
+
+    .organisation-field {
+        margin-bottom: 30px;
+    } 
 }
 
 
