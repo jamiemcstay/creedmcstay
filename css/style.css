@@ -31,29 +31,13 @@ body {
     font-family: 'NeueFaktum Light';
 }
 
-/*Heading Colors*/
+/*Global Colors*/
 
 .dark-green {
     color: #249988;
 }
 
-.mid-green-dark {
-    color: #4E8C81;
-}
-
-mid-green-bright {
-    color: #397F73;
-}
-
-.light-green {
-    color: #DCF4E7;
-}
-
-header {
-    background-color: #063A38;
-    color: white;
-    /* Ensures text is readable */
-}
+/*Headings*/
 
 h1,
 h2,
@@ -72,15 +56,22 @@ h2 {
     position: relative;
 }
 
-
-
-
 ul,
 a {
     text-decoration: none;
     list-style-type: none;
     padding-left: 0;
 }
+
+/* Header */
+
+
+header {
+    background-color: #063A38;
+    color: white;
+    /* Ensures text is readable */
+}
+
 
 p,
 li,
@@ -126,24 +117,17 @@ ul.nav {
 
 .navbar-nav .nav-link {
     color: white;
-    /* Default link color */
     transition: color 0.3s ease;
-    /* Smooth transition for color change */
 }
 
-/* Change color when hovering over the link */
 .navbar-nav .nav-link:hover {
     color: #249987;
-    /* Hover color */
 }
 
-/* Change color when the link is active (clicked) */
 .navbar-nav .nav-link:active {
     color: #249987;
-    /* Active color */
 }
 
-/* Ensure the contact info links also have the same behavior */
 a  {
     color: white;
     transition: color 0.3s ease;
@@ -166,11 +150,8 @@ a:active,
 .navbar-toggler:focus {
     outline: none !important;
     box-shadow: none !important;
-    /* Also remove any shadow if applied */
     text-decoration: none !important;
-    /* Optional if text-decoration applies */
 }
-
 
 
 .navbar-collapse {
@@ -203,27 +184,20 @@ a:active,
 
 .navbar {
     position: relative;
-    /* Allows absolute positioning within */
     display: flex;
-    /* Ensure other content respects navbar height */
     align-items: center;
-    /* Vertically center items like the left nav and right info */
 }
 
 .nav-logo-large-wrapper {
     position: absolute;
-    /* Takes the logo out of the document flow */
     left: 50%;
-    /* Center horizontally */
     top: 50%;
-    /* Center vertically */
     left: 50%;
-    /* Center horizontally */
     transform: translate(-50%, -50%);
     z-index: 1;
-    /* Ensure the logo stays on top of other elements */
 }
 
+/*Hero section*/
 
 .hero-section {
     background-color: #249987;
@@ -235,10 +209,7 @@ a:active,
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* Center content horizontally */
     align-items: center;
-    /* Center content vertically */
-
 }
 
 .hero-section::before {
@@ -249,7 +220,6 @@ a:active,
     width: 100%;
     height: 100%;
     background-image: url('/images/texture-hero.png');
-    /* Replace with your image path */
     background-size: cover;
     background-position: center;
     z-index: 1;
@@ -269,6 +239,8 @@ a:active,
 .hero-img img {
     width: 100%;
 }
+
+/*Practice areas*/
 
 .our-services-section,
 .our-team-section,
@@ -301,6 +273,7 @@ a:active,
     top: 8px;
 }
 
+/*Our partners section*/
 
 .our-team-section {
     background-color: #021C19;
@@ -376,6 +349,8 @@ a:active,
     color: lightgray;
 }
 
+/*Contact section*/
+
 .contact-section {
     background-color: #249987;
     position: relative;
@@ -429,6 +404,8 @@ form {
     margin-bottom: 30px;
 }
 
+/*Footer*/
+
 footer {
     padding-top: 60px;
     background-color: #063A38;
@@ -454,6 +431,8 @@ footer {
 .footer-bottom-wrapper p {
     font-size: calc(0.8rem + 0.2vw);
 }
+
+/*Media queries*/
 
 @media (max-width: 374px) {
 
@@ -482,7 +461,6 @@ footer {
 
     .footer-logo-wrapper {
         text-align: left !important;
-        /* Override Bootstrap's text-md-end and text-center */
     }
 
     .bio-top-wrapper {
@@ -500,7 +478,7 @@ footer {
 
     .footer-logo-wrapper {
         text-align: left;
-        /* Align logo to the left */
+
     }
 
     .footer-ul-wrapper {
@@ -511,9 +489,9 @@ footer {
         text-align: center;
     }
 
-
-
 }
+
+
 
 @media (max-width: 991px) {
 
