@@ -115,29 +115,26 @@ ul.nav {
     background-image: none;
 }
 
-.navbar-nav .nav-link {
-    color: white;
-    transition: color 0.3s ease;
-}
-
-.navbar-nav .nav-link:hover {
-    color: #249987;
-}
-
-.navbar-nav .nav-link:active {
-    color: #249987;
-}
-
 a  {
     color: white;
     transition: color 0.3s ease;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0); 
 }
 
+
+.nav-link {
+    color: white!important;
+    padding: 0 16px !important;
+    font-weight: 500;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+}
+
+
 a:hover,
-a:active,
-.bio-contact-icon i:hover {
-    transition: color 0.3s ease;
-    color: #249987;
+a:active {
+    color: #249987!important;
 }
 
 .navbar-toggler-icon div {
@@ -168,11 +165,7 @@ a:active,
     height: auto;
 }
 
-.nav-item .nav-link {
-    padding: 0 16px !important;
-    font-weight: 500;
-    color: white;
-}
+
 
 .contact-info div:first-of-type {
     margin-right: 18px;
@@ -346,6 +339,10 @@ a:active,
     display: inline-block;
     font-size: calc(1rem + 0.4vw);
     color: lightgray;
+}
+
+.bio-contact-icon i:hover {
+    color: #249987;
 }
 
 /*Contact section*/
